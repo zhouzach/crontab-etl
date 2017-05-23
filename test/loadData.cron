@@ -1,0 +1,4 @@
+
+1 5 * * * . /home/hadoop/ihealth/task/env.sh && /bin/bash /home/hadoop/ihealth/task/loadData.sh 10.9.0.11:32400 ih_aijiakang.ih_blood_pressure >> /home/hadoop/ihealth/logs/load_data_bp_`date +\%Y-\%m`.log 2>&1
+1 5 * * * . /home/hadoop/ihealth/task/env.sh && /bin/bash /home/hadoop/ihealth/task/loadData.sh 10.9.0.11:32400 ih_aijiakang.ih_blood_pressure_all >> /home/hadoop/ihealth/logs/load_data_bp_all_`date +\%Y-\%m`.log 2>&1
+1 5 * * 1 . /home/hadoop/ihealth/task/env.sh && /bin/bash /home/hadoop/ihealth/task/loadData.sh 10.9.0.11:32400 ih_aijiakang.ih_user_profile >> /home/hadoop/ihealth/logs/load_data_user_`date +\%Y-\%m`.log 2>&1

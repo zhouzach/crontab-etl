@@ -1,2 +1,0 @@
-
-11 12 * * * . /home/hadoop/ihealth/task/env.sh && /bin/bash /home/hadoop/ihealth/task/weeklyTask.sh /home/hadoop/ihealth/aijiakang_data_analysis.jar >> /home/hadoop/ihealth/logs/weeklyTask.log 2>&1
