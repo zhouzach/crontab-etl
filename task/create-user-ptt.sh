@@ -1,5 +1,5 @@
 
-impala-shell -i 10.9.0.11:32400 -q "create table ih_aijiakang.ih_user_profile (
+impala-shell -i 10.9.0.11:32400 -q "create table ih_aijiakang.ih_user_profile_ptt (
 	userid bigint,
 	un string,
 	username_third string,
@@ -34,6 +34,7 @@ impala-shell -i 10.9.0.11:32400 -q "create table ih_aijiakang.ih_user_profile (
 	last_measure_time string,
 	available smallint
 )
+PARTITIONED BY (year smallint, month tinyint, day tinyint)
 row format delimited 
 fields terminated by '|' ESCAPED BY '\\\\'
 lines terminated by '\`'

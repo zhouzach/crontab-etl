@@ -1,0 +1,5 @@
+
+#bp daily task
+0 1 * * * . /home/hadoop/ihealth/task/env.sh && /bin/bash /home/hadoop/ihealth/task/today-task.sh  >> /home/hadoop/ihealth/logs/daily_task_`date +\%Y-\%m`.log 2>&1
+#user weekly task
+0 2 * * * . /home/hadoop/ihealth/task/env.sh && /bin/bash /home/hadoop/ihealth/task/user-weekly-task.sh  >> /home/hadoop/ihealth/logs/weekly_task_`date +\%Y-\%m`.log 2>&1
